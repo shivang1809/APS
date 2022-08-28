@@ -2,23 +2,81 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/*font-family:sans-serif;*/
 }
 header{
     height: 60px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
 	z-index: 2;
 	background-color: rgba(40, 40, 40, 0.549);
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+.welcome{
+	color: rgb(40, 40, 40);
+	width: 85%;
+	margin: 30px;
+}
+.wrapper{
+	width: 23%;
+	margin-right: 1%;
+	margin-top: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #00a6ff8b;
+}
+
+.wrapper li{
+	background-color: rgba(40, 40, 40, 0.549);
+	margin: 5px;
+	padding: 5px;
+	border-radius: 3px;
+}
+.notice a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	max-width: 75%;
+	background-color: rgba(255, 218, 185, 0.27);
+	padding: 10px;
+}
+.welContent{
+	margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.welContent a{
+	text-decoration: none;
+	background-color: #00a7ff;
+	border: 10px white;
+	color: white;
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 3px;
+}
+.welcome a:hover{
+	background-color: #0093e3;
+}
 .movingtext{
 	background-color: #00a7ff;
 	color: white;
 	font-size: 18px;
 	padding: 5px;
+	text-align: left;
 }
 .mail{
 	text-decoration: none;
@@ -140,6 +198,9 @@ header{
   	animation-name: posi;
   	animation-duration: 2s;
 	z-index: 1;
+	background-color: rgba(40, 40, 40, 0.549);
+	padding: 20px;
+	border-radius: 5px;
 }
 
 @-webkit-keyframes posi {
@@ -162,13 +223,55 @@ header{
 	font-weight: bold;
 	font-size: 20px;
 }
-
-img{
+.containt{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+}
+.deskImg{
+	width:350px;
+	height: 200px;
+	border-radius: 5px;
+}
+.wordings h3{
+	margin-top: 30px;
+}
+.principalDesk{
+	margin-top: 20px;
+	width: 85%;
+	padding: 10px;
+	background-color: #00a6ff8b;
+	border-radius: 5px;
+	color:rgb(36, 36, 36) ;
+}
+.underline{
+    width: 150px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    margin: 10px;
+}
+.u{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.slideImg{
 	transform: scale(1.5, 1.5);
 	-webkit-animation-name: zoomin;
   	-webkit-animation-duration: 40s;
   	animation-name: zoomin;
   	animation-duration: 40s;
+}
+.wordings{
+	width:40%;
+	height: 100%;
+}
+.wordings h3{
+	bottom: 0%;
 }
 @-webkit-keyframes zoomin {
   from {transform: scale(1, 1);}
@@ -180,10 +283,30 @@ img{
   from {transform: scale(1, 1);}
   to {transform: scale(1.5, 1.5);}
 }
-
+@media screen and (max-width: 1080px){
+	.deskImg{
+		width: 300px;
+		height: 180px;
+	}
+}
+@media screen and (max-width: 950px){
+	.main{
+		justify-content: center;
+	}
+	.container{
+		max-width: 100%;
+	}
+	.wrapper{
+		width: 98%;
+		margin-right: 0%;
+	}
+}
 @media screen and (max-width: 800px){
 	.myslide{
 		height: 500px;
+	}
+	.wordings{
+		width: 98%;
 	}
 	.txt{
 		letter-spacing: 2px;
@@ -218,6 +341,12 @@ img{
 }
 
 @media screen and (max-width: 520px){
+	.wordings h3{
+		font-size: 15px;
+	}
+	.welContent a{
+		font-size: 15px;
+	}
 	.myslide{
 		height: 380px;
 	}
@@ -231,8 +360,15 @@ img{
 	.sign a{
 		font-size: 12px;
 	}
+	
 }
 @media screen and (max-width: 400px){
+	.wordings h3{
+		font-size: 12px;
+	}
+	.welContent a{
+		font-size: 12px;
+	}
 	.myslide{
 		height: 310px;
 	}
@@ -249,6 +385,9 @@ img{
 	.dot{
 		width: 12px;
 		height: 12px;
+	}
+	.deskImg{
+		width: 98%;
 	}
 }
 
@@ -268,20 +407,4 @@ img{
 	display: flex;
 	flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
