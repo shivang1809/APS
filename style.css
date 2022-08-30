@@ -44,6 +44,7 @@ header {
 @media (max-width: 990px) {
 	
 	.nav-button:hover .nav-links{
+		height: 95vh;
 		display: block;
 		display: flex;
 		flex-direction:column-reverse;
