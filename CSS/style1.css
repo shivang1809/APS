@@ -49,7 +49,7 @@
 	flex-wrap: wrap;
 }
 
-.welContent a {
+.btn {
 	text-decoration: none;
 	background-color: #00a7ff;
 	border: 10px white;
@@ -59,7 +59,7 @@
 	border-radius: 3px;
 }
 
-.welcome a:hover {
+.btn:hover {
 	background-color: #0093e3;
 }
 
@@ -183,9 +183,26 @@
 	animation-name: posi;
 	animation-duration: 2s;
 	z-index: 1;
+
 	background-color: rgba(40, 40, 40, 0.549);
 	padding: 20px;
 	border-radius: 5px;
+
+	/*
+	text-shadow: 0 1px 0 rgb(65, 65, 65), 
+	               0 2px 0 #484848,
+	               0 3px 0 rgb(63, 63, 63),
+	               0 4px 0 #313131,
+	               0 5px 0 rgb(48, 48, 48),
+	               0 6px 1px rgba(0,0,0,.1),
+	               0 0 5px rgba(0,0,0,.1),
+	               0 1px 3px rgba(0,0,0,.3),
+	               0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.25),
+	               0 10px 10px rgba(0,0,0,.2),
+	               0 20px 20px rgba(0,0,0,.15);*/
+	
+	
 }
 
 @-webkit-keyframes posi {
@@ -279,6 +296,7 @@
 .wordings h3 {
 	bottom: 0%;
 }
+
 
 @-webkit-keyframes zoomin {
 	from {
