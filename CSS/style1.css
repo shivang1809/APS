@@ -297,6 +297,73 @@
 	bottom: 0%;
 }
 
+.gallery{
+	background-color: #00a6ff8b;
+	margin: 12px;
+	color: rgb(36, 36, 36);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.gallery a{
+	text-decoration: none;
+	float: right;
+	color: #27c0f5;
+	border-color: rgb(36, 36, 36);
+	line-height: 30px;
+	font-weight: bold;
+	padding: 3px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(36, 36, 36);
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	transition: all .5s;
+}
+.gallery .images{
+	margin: 20px;
+	margin-bottom: 0%;
+}
+.section{
+	display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.section img{
+	width: 30%;
+	height: 27vh;
+	border-radius: 5px;
+	margin: 5px;
+	transition: all 1s;
+}
+/*.section img:hover{
+	position:absolute;
+	width:auto;
+	height: fit-content;
+	box-shadow: 50px 50px 50px rgba(0,0,0,.5);
+  	transform:translateY(-20px);
+}*/
+.gallery a:hover{
+	background-color: #18212b;
+	color: white;
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+  	transform:translateY(-3px);
+}
+.gTitle{
+	margin: 15px;
+}
+.gaTiText{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	line-height: 30px;
+}
+.gTitle h2{
+	width: fit-content;
+}
+
 
 @-webkit-keyframes zoomin {
 	from {
@@ -318,7 +385,6 @@
 		transform: scale(1.5, 1.5);
 	}
 }
-
 @media screen and (max-width: 1080px) {
 	.deskImg {
 		width: 300px;
@@ -327,6 +393,10 @@
 }
 
 @media screen and (max-width: 950px) {
+	.section img{
+		width: 85%;
+		height: 25vh;
+	}
 	.main {
 		justify-content: center;
 	}
@@ -342,6 +412,10 @@
 }
 
 @media screen and (max-width: 800px) {
+	.section img{
+		width: 95%;
+		height: 25vh;
+	}
 	.myslide {
 		height: 500px;
 	}
@@ -393,6 +467,16 @@
 
 }
 @media screen and (max-width: 670px) {
+	.gaTiText{
+		font-size: 23px;
+	}
+	.gallery a{
+		font-size: 12px;
+	}
+	.section img{
+		width: 98%;
+		height: 20vh;
+	}
 	.myslide{
 		height: 440px;
 	}
@@ -423,6 +507,9 @@
 @media screen and (max-width: 460px) {
 	.myslide{
 		height: 310px;
+	}
+	.gallery .images{
+		margin: 5px;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -455,4 +542,20 @@
 		width: 98%;
 	}
 }
+@media screen and (max-width: 280px) {
+	.gTitle{
+		margin-bottom: 25px;
+	}
+	.gaTiText{
+		font-size: 18px;
+	}
+	.gallery a{
+		font-size: 9px;
+		padding: 2px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+}
+
 
