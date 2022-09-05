@@ -31,7 +31,54 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
+.reachUs{
+	background-color: rgba(255, 218, 185, 0.27);
+	color: rgb(40, 40, 40);
+	padding: 20px;
+}
+.reachUsAll{
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.map iframe{
+	width: 600px;
+	height: 300px;
+	border-radius: 3px;
+}
+.details{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+	width: 40%;
+	border: 2px solid rgba(53, 53, 53, 0.355);
+	border-radius: 5px;
+}
+.details a{
+	text-decoration: none;
+	color: rgb(40, 40, 40);
+}
+.details i{
+	background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.details p{
+	width: 70%;
+	display: inline-block;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -336,6 +383,7 @@
 	height: 27vh;
 	border-radius: 5px;
 	margin: 5px;
+	box-shadow: 0 8px 15px rgba(0,0,0,.5);
 	transition: all 1s;
 }
 /*.section img:hover{
@@ -390,9 +438,18 @@
 		width: 300px;
 		height: 180px;
 	}
+	.map iframe{
+		width: 500px;
+	} 
 }
 
 @media screen and (max-width: 950px) {
+	.map iframe{
+		width: 700px;
+	} 
+	.details{
+		width: 700px;
+	}
 	.section img{
 		width: 85%;
 		height: 25vh;
@@ -412,6 +469,12 @@
 }
 
 @media screen and (max-width: 800px) {
+	.map iframe{
+		width: 550px;
+	} 
+	.details{
+		width: 550px;
+	}
 	.section img{
 		width: 95%;
 		height: 25vh;
@@ -467,6 +530,12 @@
 
 }
 @media screen and (max-width: 670px) {
+	.map iframe{
+		width: 450px;
+	} 
+	.details{
+		width: 450px;
+	}
 	.gaTiText{
 		font-size: 23px;
 	}
@@ -486,6 +555,12 @@
 }
 
 @media screen and (max-width: 520px) {
+	.map iframe{
+		width: 300px;
+	} 
+	.details{
+		width: 90%;
+	}
 	.wordings h3 {
 		font-size: 15px;
 	}
@@ -505,6 +580,16 @@
 
 }
 @media screen and (max-width: 460px) {
+	.reachUsAll{
+		padding: 3px;
+	}
+	.map iframe{
+		width: 270px;
+		height: 170px;
+	} 
+	.details{
+		width: 98%;
+	}
 	.myslide{
 		height: 310px;
 	}
