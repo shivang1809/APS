@@ -1,8 +1,10 @@
 /*Style code related to home page of the site.*/
+
 .welcome {
 	color: rgb(40, 40, 40);
-	width: 85%;
-	margin: 30px;
+	width: 95%;
+	margin: 15px;
+	margin-bottom: 1px;
 }
 
 .wrapper {
@@ -34,7 +36,7 @@
 .reachUs{
 	background-color: rgba(255, 218, 185, 0.27);
 	color: rgb(40, 40, 40);
-	padding: 20px;
+	padding: 15px;
 }
 .reachUsAll{
 	display: flex;
@@ -304,8 +306,7 @@
 }
 
 .principalDesk {
-	margin-top: 20px;
-	width: 85%;
+	width: 95%;
 	padding: 10px;
 	background-color: #00a6ff8b;
 	border-radius: 5px;
@@ -336,7 +337,7 @@
 }
 
 .wordings {
-	width: 40%;
+	width: 60%;
 	height: 100%;
 }
 
@@ -348,7 +349,7 @@
 	background-color: #00a6ff8b;
 	margin: 12px;
 	color: rgb(36, 36, 36);
-	padding: 20px;
+	padding: 15px;
 	border-radius: 5px;
 }
 
@@ -369,7 +370,7 @@
 	transition: all .5s;
 }
 .gallery .images{
-	margin: 20px;
+	margin: 5px;
 	margin-bottom: 0%;
 }
 .section{
@@ -386,7 +387,7 @@
 	box-shadow: 0 8px 15px rgba(0,0,0,.5);
 	transition: all 1s;
 }
-/*.section img:hover{
+/*.section img:hover {
 	position:absolute;
 	width:auto;
 	height: fit-content;
@@ -400,7 +401,7 @@
   	transform:translateY(-3px);
 }
 .gTitle{
-	margin: 15px;
+	margin-bottom: 12px;
 }
 .gaTiText{
 	font-size: 30px;
@@ -433,7 +434,12 @@
 		transform: scale(1.5, 1.5);
 	}
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1450px) {
+	.wordings{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 1150px) {
 	.deskImg {
 		width: 300px;
 		height: 180px;

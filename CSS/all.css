@@ -1,4 +1,5 @@
 /*Style code has to be added in almost all pages*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -158,7 +159,6 @@ header {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
-	margin-top: 10px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	bottom: 0;
