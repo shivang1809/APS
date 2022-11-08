@@ -1,19 +1,31 @@
-.hidden{
+.hidden-left{
     opacity: 0;
     filter: blur(5px);
     transform:translateX(-50%);
     transition: all 1s;
 }
-.show{
+.show-left{
+    opacity: 1;
+    filter: blur(0);
+    transform:translateX(0);
+}
+.hidden-up{
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(50%);
+    transition: all 1s;
+}
+.show-up{
     opacity: 1;
     filter: blur(0);
     transform:translateX(0);
 }
 @media(prefer-redused-motion){
-    .hidden{
+    .hidden-left,.hidden-up{
         transition: none;
     }
 }
+
 .galPreImg:nth-child(2){
     transition-delay: 200ms;
 }
