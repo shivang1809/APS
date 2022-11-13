@@ -24,3 +24,17 @@ const observer2 = new IntersectionObserver((entries) => {
 
 const hiddenElement2 = document.querySelectorAll('.hidden-up');
 hiddenElement2.forEach((el) => observer2.observe(el))
+
+//-----------------------------------------------------------
+
+const observer3 = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=>{
+        console.log(entry);
+        if (entry.isIntersecting){
+            entry.target.classList.add('show-right');
+        }
+    })
+})
+
+const hiddenElement3 = document.querySelectorAll('.hidden-right');
+hiddenElement3.forEach((el) => observer3.observe(el))
