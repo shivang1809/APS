@@ -604,7 +604,8 @@
 	}
 }
 @media screen and (max-width: 400px) {
-	
+	.txt{
+		display: none;}
 	.wordings h3 {
 		font-size: 12px;
 	}
