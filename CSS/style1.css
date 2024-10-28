@@ -494,6 +494,7 @@
 	}
 
 	.txt {
+		display:none;
 		letter-spacing: 2px;
 		line-height: 25px;
 		top: 50%;
